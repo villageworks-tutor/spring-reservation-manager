@@ -1,0 +1,5 @@
+\c postgres
+DROP DATABASE IF EXISTS ssm_db;
+DROP USER IF EXISTS student;
+CREATE USER student WITH PASSWORD 'himitu';
+CREATE DATABASE ssm_db OWNER student ENCODING 'UTF8';
